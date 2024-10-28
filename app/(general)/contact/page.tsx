@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Contact Title',
   description: 'Contact description',
-  keywords: ['Contact Page', 'Chris', 'InformaTION', '...'],
+  keywords: ['Contact Page'],
 };
 
 export default function ContactPage() {
