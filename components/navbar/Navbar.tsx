@@ -1,5 +1,6 @@
 import { IconHome } from '@tabler/icons-react';
 import Link from 'next/link';
+import { ActiveLink } from '../active-link/ActiveLink';
 
 const navItems = [
   { path: '/about', text: 'About' },
@@ -18,9 +19,7 @@ export const Navbar = async () => {
       <div className="flex flex-1"></div>
 
       {navItems.map((navItems) => (
-        <Link className="mr-2" key={navItems.path} href={navItems.path}>
-          {navItems.text}
-        </Link>
+        <ActiveLink key={navItems.path} {...navItems} />
       ))}
     </nav>
   );
